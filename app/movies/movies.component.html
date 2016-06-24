@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-
-</body>
-</html>
+<div class="content">
+    <!--{{ $ctrl.message }}-->
+    <!--<button class="btn-primary">Show Message</button>-->
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Rating</th>
+            <th>Length</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="movie in model.movies">
+            <td>{{movie.title}}</td>
+            <td>{{movie.rating}}</td>
+            <td>{{movie.length}}</td>
+            <td>
+                <div class="btn-group">
+                    <button class="btn btn-sm btn-primary">Edit</button>
+                </div>
+                <div class="btn-group">
+                    <button class="btn btn-sm btn-primary">Save</button>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
