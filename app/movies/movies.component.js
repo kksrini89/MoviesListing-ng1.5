@@ -11,6 +11,16 @@
                 model.movies = data;
             });
         }
+        model.upRating = function (movie) {
+            if (movie.rating < 5){
+                movie.rating += 1;
+            }
+        }
+        model.downRating = function (movie) {
+            if (movie.rating > 1){
+                movie.rating -= 1;
+            }
+        }
     }
 
     function fetchMovies($http) {
