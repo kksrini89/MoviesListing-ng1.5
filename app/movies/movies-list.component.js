@@ -30,7 +30,7 @@
     }
 
     app.component('moviesList', {
-        templateUrl: 'movies/movies.component.html',
+        templateUrl: 'movies/movies-list.component.html',
         controllerAs: 'model',
         controller: ['$http', controller]
     });
