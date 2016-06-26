@@ -30,7 +30,8 @@
         templateUrl: 'movies/movies-rating.component.html',
         bindings: {
             value: '<',
-            max: '<'
+            max: '<',
+            setRating : '&'
         },
         //transclude : true,
         controllerAs: 'model',

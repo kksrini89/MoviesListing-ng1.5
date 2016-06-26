@@ -16,7 +16,7 @@
             <td>{{movie.length}}</td>
             <!--<td>{{movie.rating}}</td>-->
             <td>
-                <movies-rating value="movie.rating" max="5">
+                <movies-rating value="movie.rating" max="5" set-rating="model.setRating(movie,value)">
                     <!--<span class="fa fa-star"></span>-->
                 </movies-rating>
             </td>
