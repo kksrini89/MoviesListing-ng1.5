@@ -4,4 +4,5 @@ Composition Techniques
 
   *But set the root level component route config to match this nested routing.
 
-2.
+2. Decoupling the component - star rating component (any component can access)
+3. Creating coupled component - eg., panel-group bootstrap class having relationship with panel-heading panel-body
