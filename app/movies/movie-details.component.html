@@ -9,6 +9,16 @@
                 <div class="rating"><b>Rating : </b> {{model.movie.rating}}</div>
                 <div class="length"><b>Length : </b>{{model.movie.length}}</div>
             </div>
+            <div class="specific-details">
+                <ul>
+                    <li><a ng-link="['Overview']">Overview</a></li>
+                    <li><a ng-link="['Cast']">Cast</a></li>
+                    <li><a ng-link="['Director']">Director</a></li>
+                </ul>
+            </div>
+            <div class="child-components">
+                <ng-outlet></ng-outlet>
+            </div>
         </div>
     </div>
 </div>

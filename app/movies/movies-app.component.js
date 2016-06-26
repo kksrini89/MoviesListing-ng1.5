@@ -8,7 +8,8 @@
         $routeConfig: [
             {path: '/list', component: 'moviesList', name: 'List'},
             {path: '/about', component: 'appAbout', name: 'About'},
-            {path: '/details/:id',component:'movieDetails',name:'Details'},
+            {path: '/details/:id/...',component:'movieDetails',name:'Details'},
+            //... denotes this child component can have its own routing configuration with ng-outlet to load it's child components.
             {path: '/**', redirectTo: ["List"]}
         ]
     });

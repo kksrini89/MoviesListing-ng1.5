@@ -1,0 +1,7 @@
+Composition Techniques
+
+1.Nested routes. (Child Components also can have its own routing configuration with ng-outlet to load its component)
+
+  *But set the root level component route config to match this nested routing.
+
+2.
